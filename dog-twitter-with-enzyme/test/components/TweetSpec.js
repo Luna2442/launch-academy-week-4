@@ -24,11 +24,11 @@ describe('Tweet', () => {
     expect(wrapper.find('div')).toBePresent();
   });
 
-  it('should render a div tag', () => {
+  it('should render a div tag with a poper className prop', () => {
     expect(wrapper.find('div')).toHaveProp("className", "tweet-box selected");
   });
 
-  it('should render a div tag', () => {
+  it('should render a div tag with an onClick prop', () => {
     expect(wrapper.find('div')).toHaveProp("onClick");
   });
 
