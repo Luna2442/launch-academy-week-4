@@ -24,6 +24,14 @@ describe('Tweet', () => {
     expect(wrapper.find('div')).toBePresent();
   });
 
+  it('should render a div tag', () => {
+    expect(wrapper.find('div')).toHaveProp("className", "tweet-box selected");
+  });
+
+  it('should render a div tag', () => {
+    expect(wrapper.find('div')).toHaveProp("onClick");
+  });
+
   it('should render an img tag', () => {
     expect(wrapper.find('img')).toBePresent();
   });
