@@ -1,0 +1,4 @@
+.bundle
+.DS_store
+Gemfile.lock
+public/bundle.js

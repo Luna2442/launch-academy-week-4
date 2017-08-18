@@ -39,7 +39,7 @@ class ReviewForm extends Component {
   clearForm(){
     this.setState({
       name: '',
-      rating: 1,
+      rating: '',
       content: ''
     })
   }
