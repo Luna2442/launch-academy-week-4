@@ -57,22 +57,27 @@ class App extends Component {
     return(
       <div>
         <div className="row">
+
           <div className="small-3 columns">
             <h1>Restaurant</h1>
             {restaurantComponents}
           </div>
+
           <div className="small-9 columns">
             <h2>Reviews for {this.selectedRestaurant().name}</h2>
             <Reviews data={relevantReviews} />
           </div>
+
           <div className="small-9 columns">
             <h2>Submit a Review</h2>
             <ReviewForm id={this.state.selectedId} submitFunction={this.addReview}/>
           </div>
+
           <div className="small-9 columns">
             <h2>Submit a Restaurant</h2>
             <RestaurantForm submitFunction={this.addRestaurant}/>
           </div>
+
         </div>
       </div>
     )
